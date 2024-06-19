@@ -13,7 +13,7 @@ Users can control a character, choosing to attack or defend in real time.
 - **Realistic sound and avatars**: Sounds are reproduced for many skills, and each character has their own avatar.
 - **Elimination tournament**: The game proceeds in an elimination-style tournament, where winners advance to the final.
 
-## Technologies Used
+## Languages
 - HTML
 - CSS
 - JavaScript
