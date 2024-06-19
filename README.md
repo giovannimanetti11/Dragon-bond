@@ -10,7 +10,7 @@ Users can control a character, choosing to attack or defend in real time.
 ## Features
 - **Random fighter selection**: fighters are randomly assigned for each match.
 - **Special attacks and defense**: each fighter possesses special skills and the ability to defend, which allows them to recover health and energy.
-- **Realistic sound and avatars**: sounds are reproduced for many skills, and each character has their own avatar.
+- **Realistic sound and avatars**: sounds are reproduced for many skills, and each character has its own avatar.
 - **Elimination tournament**: the game proceeds in an elimination-style tournament, where winners advance to the final.
 
 ## Languages
