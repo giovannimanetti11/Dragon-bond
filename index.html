@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="favicon/favicon.ico">
+        <meta charset="UTF-8">
+        <title>Dragon-bond by Samuele Manetti</title>
+    </head>
+    <body>
+        <h1>Tenkaichi Tournament</h1>
+        <div id="container">
+            <div class="left-fighter" id="left-fighter">
+                <div class="img-container">
+                    <img id="left-avatar" src="" alt="Left Fighter">
+                </div>
+                <div id="left-stats">
+                    <p id="left-name"></p>
+                    <p id="left-name-powerlevel"></p>
+                    <div class="bar-container">
+                        <img src="icons/heart.png" alt="Life Icon" class="icon">
+                        <div id="left-life-bar" class="bar life-bar">100</div>
+                    </div>
+                    <div class="bar-container">
+                        <img src="icons/lighting.png" alt="Energy Icon" class="icon">
+                        <div id="left-energy-bar" class="bar energy-bar">100</div>
+                    </div>
+                    <div id="left-move-name" class="move-name"></div>
+                    <div class="action-buttons">
+                        <button id="left-attacca" title="Attack with a random move" onclick="performAction('left', 'attacca')">Attack</button>
+                        <button title="Defend to recover health and energy" onclick="performAction('left', 'difendi')">Defend</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-fighter" id="right-fighter">
+                <div class="img-container">
+                    <img id="right-avatar" src="" alt="Right Fighter">
+                </div>
+                <div id="right-stats">
+                    <p id="right-name"></p>
+                    <p id="right-name-powerlevel"></p>
+                    <div class="bar-container">
+                        <img src="icons/heart.png" alt="Life Icon" class="icon">
+                        <div id="right-life-bar" class="bar life-bar">100</div>
+                    </div>
+                    <div class="bar-container">
+                        <img src="icons/lighting.png" alt="Energy Icon" class="icon">
+                        <div id="right-energy-bar" class="bar energy-bar">100</div>
+                    </div>
+                    <div id="right-move-name" class="move-name"></div>
+                    <div class="action-buttons">
+                        <button id="right-attacca" title="Attack with a random move" onclick="performAction('right', 'attacca')">Attack</button>
+                        <button title="Defend to recover health and energy" onclick="performAction('right', 'difendi')">Defend</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tournament-bracket">
+            <div id="bracket-container"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

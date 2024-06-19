@@ -1,0 +1,301 @@
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+#results h2, #team-results h2, h1 {
+  background-color: #f2f2f2;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.powerIcon {
+  max-width: 30px;
+  max-height: 30px;
+  margin-bottom: -3px;
+}
+
+.left-fighter, .right-fighter {
+  min-width: 350px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  border: 5px solid transparent;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+img {
+  margin-top: 25px;
+  width: 100px;
+  height: auto;
+  align-self: center;
+}
+
+.img-container {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar-container {
+  width: 250px;
+  border-radius: 25px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  margin-top: 0;
+}
+
+.bar {
+  height: 20px;
+  width: 100%;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+}
+
+.life-bar {
+  background-color: red;
+}
+
+.energy-bar {
+  background-color: blue;
+}
+
+.life-bar, .energy-bar {
+  transition: width 3s;
+}
+
+#left-name, #right-name {
+  font-weight: bold;
+}
+
+.highlight {
+  border: 5px solid yellow;
+}
+
+.action-buttons {
+  margin: 20px auto;
+}
+
+.action-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.action-buttons button:hover {
+  cursor: pointer;
+}
+
+.move-name {
+  font-weight: bold;
+  color: green;
+  margin-top: 10px;
+  height: 20px;
+}
+
+#results {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#results table {
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+  width: 50%;
+  background-color: #f2f2f2;
+}
+
+#results th, #results td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tournament-bracket {
+  margin: 20px auto;
+  text-align: center;
+  width: 90%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.bracket-round {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: green;
+  display: none;
+}
+
+.bracket-match {
+  min-width: 150px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.winner {
+  text-decoration: none;
+}
+
+.loser {
+  text-decoration: line-through;
+}
+
+#tournament-bracket {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#bracket-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bracket-round {
+  display: flex;
+  flex-direction: row !important;
+  margin: 20px;
+}
+
+#round-2, #round-3, #round-4 {
+  flex-direction: column;
+}
+
+.bracket-matchup {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.bracket-fighter {
+  margin: 5px 0;
+}
+
+.bracket-fighter.strikethrough {
+  text-decoration: line-through;
+}
+
+.bracket-fighter.winner {
+  font-weight: bold;
+}
+
+.highlight-yellow {
+  border: 5px solid yellow;
+}
+
+/* CSS for animation */
+@keyframes flash {
+  0% { background-color: red; }
+  50% { background-color: white; }
+  100% { background-color: red; }
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+      flex-direction: column;
+      width: 90%;
+  }
+
+  .left-fighter, .right-fighter {
+      width: 100%;
+      min-width: 300px;
+  }
+
+  #results, #team-results, #tournament-bracket {
+      width: 90%;
+  }
+
+  h1, #results h2, #team-results h2, #tournament-bracket h2 {
+      width: 90%;
+  }
+
+  .left-fighter {
+    margin-bottom: 30px;
+  }
+
+  .bracket-round {
+    flex-wrap: wrap;
+  }
+
+  #tournament-bracket {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+      font-size: 14px;
+  }
+
+  .bar-container {
+      width: 90%;
+  }
+
+  img {
+      width: 80px;
+      height: auto;
+  }
+
+  .action-buttons button {
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+
+  .left-fighter {
+    margin-bottom: 30px;
+  }
+
+  .left-fighter, .right-fighter {
+    max-width: 90%;
+  }
+}
