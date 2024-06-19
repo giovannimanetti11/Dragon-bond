@@ -1,5 +1,8 @@
 # Dragon-bond
 
+![dragon-bond](https://github.com/giovannimanetti11/Dragon-bond/assets/38654312/af1daeb2-9e66-4d51-af4e-655ee72029d2)
+
+
 ## Description
 Dragon-bond is an interactive browser game that simulates the Tenkaichi tournament featuring Dragon Ball characters. Each character has their own "Power Level" and special skills. 
 Users can control a character, choosing to attack or defend in real time.
