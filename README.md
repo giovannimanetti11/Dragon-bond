@@ -20,3 +20,6 @@ Users can control a character, choosing to attack or defend in real time.
 
 ## Installation
 To play Dragon-bond, clone the repository and open the `index.html` file in a modern browser.
+
+## Disclaimer
+Please note that this game is a personal, non-commercial project and is not an official release related to the Dragon Ball franchise. It was created solely for educational purposes and as a creative exercise to engage young learners in the world of programming.
